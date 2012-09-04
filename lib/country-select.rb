@@ -15,7 +15,7 @@ module ActionView
         country_options = ""
 
         if select_instruction
-          COUNTRIES.unshift(select_instruction)
+          country_options = "<option value=\"\">#{select_instruction}</option>\n"
         end
 
         if priority_countries
